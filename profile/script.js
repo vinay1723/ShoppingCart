@@ -6,6 +6,7 @@ const changeEmail = document.getElementById("changeEmail");
 const oldPassword = document.getElementById("oldPassword");
 const newPassword = document.getElementById("newPassword");
 const confirmPassword = document.getElementById("confirmNewpassword");
+const logout = document.getElementById("logout");
 const errMsg = document.getElementById("error");
 
 window.onload = () => {
@@ -14,6 +15,11 @@ window.onload = () => {
   email.value = currUser.email;
   password.value = currUser.password;
 };
+
+logout.addEventListener("click", () => {
+  localStorage.removeItem("currUser");
+  window.location.href = "/login";
+});
 
 const changePassword = document.getElementById("changePassword");
 

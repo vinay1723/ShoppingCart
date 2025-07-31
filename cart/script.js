@@ -26,7 +26,7 @@ function handleCheckoutList(data) {
     return acc + Number(product.price);
   }, 0);
   console.log(totalPrice);
-  total.textContent = `$${totalPrice}`;
+  total.textContent = `$${totalPrice.toFixed(2)}`;
   renderCheckoutList(data);
 }
 
@@ -56,10 +56,12 @@ function renderCheckoutList(data) {
 }
 
 document.getElementById("checkoutBtn").onclick = function (e) {
+  let totalPrice = Number(document.getElementById("totalPrice").textContent);
   var options = {
     key: "rzp_test_PV1oQ0oMtgXOsq", // Enter the Key ID generated from the Dashboard
-    amount: 300 * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    amount: totalPrice * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: "INR",
+    callback_url: `https://${window.location.hostname}/shop`,
     name: "MyShop Checkout",
     description: "This is your order", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     theme: {
@@ -74,5 +76,6 @@ document.getElementById("checkoutBtn").onclick = function (e) {
   localStorage.removeItem("cartItems");
   renderCart([]);
   // window.location.href = "/shop";
+  renderCheckoutList([]);
   e.preventDefault();
 };

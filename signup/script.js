@@ -24,14 +24,16 @@ signupBtn.addEventListener("click", (e) => {
     if (filteredUsers.length > 0) {
       errMsg.textContent = "user already exists";
     } else {
-      users.push({
+      let currUser = {
         email: email.value,
         password: password.value,
         fname: fname.value,
         lname: lname.value,
         createdAt: new Date(),
-      });
+      };
+      users.push(currUser);
       localStorage.setItem("users", JSON.stringify(users));
+      localStorage.setItem("currUser", JSON, stringify(currUser));
       errMsg.textContent = "";
       email.value = "";
       password.value = "";
