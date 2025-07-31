@@ -33,7 +33,7 @@ signupBtn.addEventListener("click", (e) => {
       };
       users.push(currUser);
       localStorage.setItem("users", JSON.stringify(users));
-      localStorage.setItem("currUser", JSON, stringify(currUser));
+      localStorage.setItem("currUser", JSON.stringify(currUser));
       errMsg.textContent = "";
       email.value = "";
       password.value = "";
