@@ -61,7 +61,7 @@ document.getElementById("checkoutBtn").onclick = function (e) {
     key: "rzp_test_PV1oQ0oMtgXOsq", // Enter the Key ID generated from the Dashboard
     amount: totalPrice * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: "INR",
-    callback_url: `https://${window.location.hostname}/shop`,
+    callback_url: `https://${window.location.hostname}/shop/`,
     name: "MyShop Checkout",
     description: "This is your order", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     theme: {
