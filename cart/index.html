@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/login/">Login</a>
+        <a href="/signup/">Signup</a>
+        <a href="/shop">shop</a>
+        <a href="/cart">My Cart</a>
+        <a href="/Profile">Profile</a>
+      </div>
+    </nav>
+    <main>
+      <h1>My Cart</h1>
+      <section class="cart-and-checkout">
+        <section>
+          <div class="items"></div>
+        </section>
+        <section id="checkout">
+          <h3>Checkout List</h3>
+          <ul class="item-price-list">
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+            <li>
+              <p>1.Shirt</p>
+              <p>$100</p>
+            </li>
+          </ul>
+          <div id="total">
+            <p>Total</p>
+            <p id="totalPrice"></p>
+          </div>
+          <button id="checkoutBtn">Click to Checkout</button>
+        </section>
+      </section>
+    </main>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

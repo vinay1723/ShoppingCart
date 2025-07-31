@@ -1,0 +1,96 @@
+/* Write your styles here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-items a {
+  margin: 0 1rem;
+}
+
+form {
+  padding: 10px 30px;
+}
+
+#form-header {
+  margin: 20px 0px;
+  font-weight: 400;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Bold;
+  font-size: 54px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+input {
+  border: 1px solid black;
+  width: 100%;
+  margin: 10px 0px 20px 0px;
+  height: 30px;
+  width: 1634;
+  height: 48px;
+  opacity: 1;
+  border-width: 1px;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+button {
+  font-size: 18px;
+  opacity: 1;
+  margin: 20px 0px;
+  padding: 13px 60px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+#buttons button {
+  margin: 10px 0px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+        <a href="/cart">My Cart</a>
+      </div>
+    </nav>
+    <form>
+      <h1 id="form-header">My Profile</h1>
+      <input type="email" name="firstname" placeholder="email" id="email" />
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        id="password"
+      />
+      <button id="changeEmail">Save Info</button>
+      <p id="error"></p>
+      <p id="success"></p>
+    </form>
+    <form>
+      <h1 id="form-header">Edit Password</h1>
+
+      <input
+        type="password"
+        name="password"
+        placeholder="Old Password"
+        id="oldPassword"
+      />
+
+      <input
+        type="password"
+        name="confirmpassword"
+        placeholder="New Password"
+        id="newPassword"
+      />
+
+      <input
+        type="password"
+        name="confirmPassword"
+        placeholder="Confirm New Password"
+        id="confirmNewpassword"
+      />
+
+      <div id="buttons">
+        <button id="changePassword">Change Password</button>
+        <button id="logout">Logout</button>
+      </div>
+
+      <p id="error"></p>
+      <p id="success"></p>
+    </form>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

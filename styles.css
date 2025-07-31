@@ -1,0 +1,99 @@
+/* Write styles here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* position: fixed; */
+  /* z-index: 100;
+  top: 0; */
+
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-items a {
+  margin: 0 1rem;
+}
+#hero {
+  margin: 40px;
+}
+
+#hero > h1 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+#hero > p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+}
+
+#hero a {
+  padding: 10px 50px;
+  font-size: 18px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+svg {
+  position: absolute;
+  bottom: 0px;
+  top: 20px;
+  right: 0px;
+  width: 60vw;
+  height: 50vw;
+}
+
+.groups {
+  margin-top: 20px;
+}
+
+.groups > a:first-child {
+  background-color: black;
+  color: white;
+}
+
+.groups > a:last-child {
+  border: 1px solid black;
+  color: black;
+}
